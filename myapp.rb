@@ -12,12 +12,8 @@ get '/' do
 end
 
 get '/video' do
-  @ary = ["http://flashservice.xvideos.com/embedframe/2939516","http://flashservice.xvideos.com/embedframe/2939516","http://flashservice.xvideos.com/embedframe/2939516","http://flashservice.xvideos.com/embedframe/2939516"]
-  #@ary2 = @ary[rand 3] << "?autoplay=1"
-  @ary2 = @ary[0]
+  @ary = ["http://flashservice.xvideos.com/embedframe/3379905","http://flashservice.xvideos.com/embedframe/3379905","http://flashservice.xvideos.com/embedframe/140877","http://flashservice.xvideos.com/embedframe/2010020","http://flashservice.xvideos.com/embedframe/3858101","http://flashservice.xvideos.com/embedframe/129729","http://flashservice.xvideos.com/embedframe/129729","http://flashservice.xvideos.com/embedframe/4216088","http://flashservice.xvideos.com/embedframe/3249721","http://flashservice.xvideos.com/embedframe/3249721"]
+  @ary2 = @ary[rand 9]
   haml :video
 end
 
-get '/about' do
-  haml :about
-end
